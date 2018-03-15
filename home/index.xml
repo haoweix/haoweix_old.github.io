@@ -41,6 +41,16 @@
     </item>
     
     <item>
+      <title>Courses</title>
+      <link>https://haoweix.github.io/home/course/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haoweix.github.io/home/course/</guid>
+      <description>I have taken the following courses at University of Michigan:
+ EECS 501: Random Process EECS 551: Matrix Methods for Signal Processing, Data Analysis and Machine Learning EECS 545: Machine Learning EECS 504: Foundations of Computer Vision EECS 556: Image Processing  </description>
+    </item>
+    
+    <item>
       <title>Selected Publications</title>
       <link>https://haoweix.github.io/home/publications_selected/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
@@ -74,17 +84,6 @@
       
       <guid>https://haoweix.github.io/home/posts/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Teaching</title>
-      <link>https://haoweix.github.io/home/teaching/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://haoweix.github.io/home/teaching/</guid>
-      <description>This is an example of using the custom widget to create your own homepage section.
-I am a teaching instructor for the following courses at University X:
- CS101: An intro to computer science CS102: An intro to computer science CS103: An intro to computer science CS104: An intro to computer science CS105: An intro to computer science CS106: An intro to computer science CS107: An intro to computer science  </description>
     </item>
     
     <item>
