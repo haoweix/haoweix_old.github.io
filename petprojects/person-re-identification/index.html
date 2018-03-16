@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Testing">
+  <meta name="description" content="Principle Component Analysis(PCA), Logistic regression, and Support Vector Machine(SVM) will be used here. The goal of this blog is to learn how to design a classifer for MNIST hand-written number dataset">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://haoweix.github.io/project/visual-servoing/">
+  <link rel="alternate" hreflang="en-us" href="https://haoweix.github.io/petprojects/person-re-identification/">
 
   
 
@@ -69,7 +69,7 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://haoweix.github.io/project/visual-servoing/">
+  <link rel="canonical" href="https://haoweix.github.io/petprojects/person-re-identification/">
 
   <meta property="twitter:card" content="summary_large_image">
   
@@ -77,9 +77,9 @@
   <meta property="twitter:creator" content="@Haowei_Xiang">
   
   <meta property="og:site_name" content="Haowei Xiang">
-  <meta property="og:url" content="https://haoweix.github.io/project/visual-servoing/">
-  <meta property="og:title" content="Visual Servoing Control | Haowei Xiang">
-  <meta property="og:description" content="Testing"><meta property="og:image" content="https://haoweix.github.io/img/headers/bubbles-wide.jpg">
+  <meta property="og:url" content="https://haoweix.github.io/petprojects/person-re-identification/">
+  <meta property="og:title" content="Comparison of some simple classifiers for MNIST dataset | Haowei Xiang">
+  <meta property="og:description" content="Principle Component Analysis(PCA), Logistic regression, and Support Vector Machine(SVM) will be used here. The goal of this blog is to learn how to design a classifer for MNIST hand-written number dataset">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-03-15T00:00:00&#43;00:00">
@@ -89,7 +89,7 @@
 
   
 
-  <title>Visual Servoing Control | Haowei Xiang</title>
+  <title>Comparison of some simple classifiers for MNIST dataset | Haowei Xiang</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -242,56 +242,75 @@
 </nav>
 
 
-<article class="article article-project" itemscope itemtype="http://schema.org/Article">
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-<div class="article-header">
-  <img src="/img/headers/bubbles-wide.jpg" class="article-banner" itemprop="image">
-  <span class="article-header-caption">Testing 😄</span>
-</div>
-
 
 
   <div class="article-container">
+    <h1 itemprop="name">Comparison of some simple classifiers for MNIST dataset</h1>
 
-    <div class="pub-title">
-      <h1 itemprop="name">Visual Servoing Control</h1>
-      <span class="pub-authors" itemprop="author">&nbsp;</span>
-      <span class="pull-right">
-        
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-03-15 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Mar 15, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Haowei Xiang">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+
+  
+
+  
+  
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Visual%20Servoing%20Control&amp;url=https%3a%2f%2fhaoweix.github.io%2fproject%2fvisual-servoing%2f"
+         href="https://twitter.com/intent/tweet?text=Comparison%20of%20some%20simple%20classifiers%20for%20MNIST%20dataset&amp;url=https%3a%2f%2fhaoweix.github.io%2fpetprojects%2fperson-re-identification%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhaoweix.github.io%2fproject%2fvisual-servoing%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fhaoweix.github.io%2fpetprojects%2fperson-re-identification%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhaoweix.github.io%2fproject%2fvisual-servoing%2f&amp;title=Visual%20Servoing%20Control"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fhaoweix.github.io%2fpetprojects%2fperson-re-identification%2f&amp;title=Comparison%20of%20some%20simple%20classifiers%20for%20MNIST%20dataset"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fhaoweix.github.io%2fproject%2fvisual-servoing%2f&amp;title=Visual%20Servoing%20Control"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fhaoweix.github.io%2fpetprojects%2fperson-re-identification%2f&amp;title=Comparison%20of%20some%20simple%20classifiers%20for%20MNIST%20dataset"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Visual%20Servoing%20Control&amp;body=https%3a%2f%2fhaoweix.github.io%2fproject%2fvisual-servoing%2f">
+         href="mailto:?subject=Comparison%20of%20some%20simple%20classifiers%20for%20MNIST%20dataset&amp;body=https%3a%2f%2fhaoweix.github.io%2fpetprojects%2fperson-re-identification%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -299,48 +318,29 @@
 </div>
 
 
-      </span>
-    </div>
-
-    
-
-    <div class="article-style" itemprop="articleBody">
-      <p>Testing</p>
-
-    </div>
-
-    
-
-
-<div class="article-tags">
   
-  <a class="btn btn-primary btn-outline" href="/tags/robot">robot</a>
-  
+
 </div>
 
 
+    <div class="article-style" itemprop="articleBody">
+      <p>More detail can easily be written here using <em>Markdown</em> and $\rm \LaTeX$ math code.</p>
+
+    </div>
+
+    
 
 
     
     
+
     
 
     
-      
-      
-      
-      
 
-      
-      
-      
-      
-    
 
   </div>
 </article>
-
-
 
 <footer class="site-footer">
   <div class="container">
@@ -420,6 +420,13 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
     
     
 

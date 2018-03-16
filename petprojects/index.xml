@@ -2,32 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications on Haowei Xiang</title>
-    <link>https://haoweix.github.io/publication/</link>
+    <link>https://haoweix.github.io/petprojects/</link>
     <description>Recent content in Publications on Haowei Xiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://haoweix.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://haoweix.github.io/petprojects/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/publication/person-re-identification/</link>
+      <link>https://haoweix.github.io/petprojects/person-re-identification/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/publication/person-re-identification/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.
-$\sum_{i=1}^{N}$</description>
+      <guid>https://haoweix.github.io/petprojects/person-re-identification/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
     </item>
     
     <item>
       <title>Mobile visual clothing search</title>
-      <link>https://haoweix.github.io/publication/clothing-search/</link>
+      <link>https://haoweix.github.io/petprojects/clothing-search/</link>
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/publication/clothing-search/</guid>
+      <guid>https://haoweix.github.io/petprojects/clothing-search/</guid>
       <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
     </item>
     
