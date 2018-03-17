@@ -14,12 +14,14 @@
     
     <item>
       <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/publication/person-re-identification/</link>
+      <link>https://haoweix.github.io/publication/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/publication/person-re-identification/</guid>
+      <guid>https://haoweix.github.io/publication/mnist-classifier/</guid>
       <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.
-$\sum_{i=1}^{N}$</description>
+The Goal of this post: is to summarize some interesting supervised machine learning approach using MNIST Data.
+Method: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks will be introduced here.
+Results: It&amp;rsquo;s natural to expect that complicated model will have lower test error.</description>
     </item>
     
     <item>

@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>https://haoweix.github.io/petprojects/person-re-identification/</loc>
+      <loc>https://haoweix.github.io/petprojects/mnist-classifier/</loc>
       <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,7 +14,16 @@
     
     <url>
     
-      <loc>https://haoweix.github.io/publication/person-re-identification/</loc>
+      <loc>https://haoweix.github.io/publication/mnist-classifier/</loc>
+      <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://haoweix.github.io/testing2/mnist-classifer/</loc>
       <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,15 +68,6 @@
     
     <url>
     
-      <loc>https://haoweix.github.io/petprojects/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://haoweix.github.io/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -77,7 +77,25 @@
     
     <url>
     
+      <loc>https://haoweix.github.io/testing2/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://haoweix.github.io/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://haoweix.github.io/petprojects/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -123,6 +141,15 @@
     <url>
     
       <loc>https://haoweix.github.io/publication/clothing-search/</loc>
+      <lastmod>2013-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://haoweix.github.io/testing2/clothing-search/</loc>
       <lastmod>2013-07-01T00:00:00+00:00</lastmod>
     </url>
     

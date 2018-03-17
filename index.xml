@@ -12,23 +12,59 @@
     
     <item>
       <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/petprojects/person-re-identification/</link>
+      <link>https://haoweix.github.io/petprojects/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/petprojects/person-re-identification/</guid>
+      <guid>https://haoweix.github.io/petprojects/mnist-classifier/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Goal of this post&lt;/strong&gt;: is to summarize some interesting supervised machine learning approach using MNIST Data.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/publication/person-re-identification/</link>
+      <link>https://haoweix.github.io/publication/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/publication/person-re-identification/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>https://haoweix.github.io/publication/mnist-classifier/</guid>
+      <description>
 
-&lt;p&gt;$\sum_{i=1}^{N}$&lt;/p&gt;
+&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Goal of this post&lt;/strong&gt;: is to summarize some interesting supervised machine learning approach using MNIST Data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Method&lt;/strong&gt;: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks will be introduced here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: It&amp;rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data.&lt;/p&gt;
+
+&lt;h2 id=&#34;subspace-learning&#34;&gt;Subspace learning&lt;/h2&gt;
+
+&lt;p&gt;Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a d*n matrix, where $d=28 * 28$ and n is the number of training sample.&lt;/p&gt;
+
+&lt;h2 id=&#34;pca-eigenface&#34;&gt;PCA(eigenface)&lt;/h2&gt;
+
+&lt;p&gt;This is a related method to subspace learning. While subspace learning separately calculate SVD of each class, PCA regard the training data as a hole and find the eigenvectors of scatter matrix coresponding to the largest eigenvalues.&lt;/p&gt;
+
+&lt;h2 id=&#34;logistic-regression&#34;&gt;logistic Regression&lt;/h2&gt;
+
+&lt;p&gt;Logistic regression is one of the most widely used classify method across the world even for those non-machine learning field. A simple reason for that it is easily to implement and trained, and results is also somehow satisfying.&lt;/p&gt;
+
+&lt;h2 id=&#34;svm&#34;&gt;SVM&lt;/h2&gt;
+
+&lt;p&gt;SVM can implemented simply by using python sk-learn library. What need to be tuned are the hyperparameter C and $\gamma$, which can be done by cross-validation, either by sk-learn library or writing one&amp;rsquo;s own.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rough result&lt;/strong&gt;: training set size and test set size are both 10000. After tuning C=3 and $\gamma$=0.05, the test accuracy is 96.57%, which is much higher than subspace learning and logistic regression.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comparison of some simple classifiers for MNIST dataset</title>
+      <link>https://haoweix.github.io/testing2/mnist-classifer/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haoweix.github.io/testing2/mnist-classifer/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ m&lt;/p&gt;
 </description>
     </item>
     
@@ -283,6 +319,16 @@ git submodule update --init --recursive
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://haoweix.github.io/publication/clothing-search/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mobile visual clothing search</title>
+      <link>https://haoweix.github.io/testing2/clothing-search/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://haoweix.github.io/testing2/clothing-search/</guid>
       <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
     </item>

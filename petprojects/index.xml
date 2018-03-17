@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Haowei Xiang</title>
+    <title>publications on Haowei Xiang</title>
     <link>https://haoweix.github.io/petprojects/</link>
-    <description>Recent content in Publications on Haowei Xiang</description>
+    <description>Recent content in publications on Haowei Xiang</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -14,11 +14,12 @@
     
     <item>
       <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/petprojects/person-re-identification/</link>
+      <link>https://haoweix.github.io/petprojects/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://haoweix.github.io/petprojects/person-re-identification/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+      <guid>https://haoweix.github.io/petprojects/mnist-classifier/</guid>
+      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.
+The Goal of this post: is to summarize some interesting supervised machine learning approach using MNIST Data.</description>
     </item>
     
     <item>
