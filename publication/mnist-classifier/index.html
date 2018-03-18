@@ -403,31 +403,137 @@
 
     <div class="article-style">
 
-<p>More detail can easily be written here using <em>Markdown</em> and $\rm \LaTeX$ math code.</p>
-
-<p><strong>The Goal of this post</strong>: is to summarize some interesting supervised machine learning approach using MNIST Data.</p>
+<p><strong>The Goal of this post</strong>: is to summarize some interesting supervised machine learning approach, which classfify MNIST hand-writen digit dataset.</p>
 
 <p><strong>Method</strong>: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks will be introduced here.</p>
 
 <p><strong>Results</strong>: It&rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data.</p>
 
-<h2 id="subspace-learning">Subspace learning</h2>
+<p><strong>Implementation</strong>: Currently these methods are implemented respectively by Julia, MATLAB, and python. I will try to rewrite them all in python if I have time (probably in the summer).</p>
+
+<h3 id="subspace-learning">Subspace Learning</h3>
 
 <p>Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a d*n matrix, where $d=28 * 28$ and n is the number of training sample.</p>
 
-<h2 id="pca-eigenface">PCA(eigenface)</h2>
+<h3 id="pca-eigenface">PCA(eigenface)</h3>
 
 <p>This is a related method to subspace learning. While subspace learning separately calculate SVD of each class, PCA regard the training data as a hole and find the eigenvectors of scatter matrix coresponding to the largest eigenvalues.</p>
 
-<h2 id="logistic-regression">logistic Regression</h2>
+<h3 id="logistic-regression">logistic Regression</h3>
 
 <p>Logistic regression is one of the most widely used classify method across the world even for those non-machine learning field. A simple reason for that it is easily to implement and trained, and results is also somehow satisfying.</p>
 
-<h2 id="svm">SVM</h2>
+<h3 id="svm">SVM</h3>
 
 <p>SVM can implemented simply by using python sk-learn library. What need to be tuned are the hyperparameter C and $\gamma$, which can be done by cross-validation, either by sk-learn library or writing one&rsquo;s own.</p>
 
 <p><strong>Rough result</strong>: training set size and test set size are both 10000. After tuning C=3 and $\gamma$=0.05, the test accuracy is 96.57%, which is much higher than subspace learning and logistic regression.</p>
+
+<h3 id="fully-connected-nn">Fully connected NN</h3>
+
+<p>2 layers and 3 layers NN are used here.</p>
+
+<p><strong>Dataset</strong>: Training set size is 10000 and test set size is 1000.</p>
+
+<p><strong>Training method</strong>: Xaxier&rsquo;s method and Mini-batch gradient descent(batch size =500).</p>
+
+<p><strong>2 layers NN</strong>: There are 50 neurons in the hidden layer.</p>
+
+<p>​   Training accuracy is 100% after 500 epochs. Test error is 95.00%.</p>
+
+
+<figure>
+    
+        <img src="/img/pr1accr.jpg" />
+    
+    
+    <figcaption>
+        <h4>2 layer NN accuracy</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<figure>
+    
+        <img src="/img/pr1loss.jpg" />
+    
+    
+    <figcaption>
+        <h4>2 layer NN loss</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<p><strong>3 layers NN</strong>: There 50 neurons in first hidden layer and 30 neurons in the second hidden layer.</p>
+
+<p>​   Training accuracy after 100 epoch is 100%, test accuracy is 95.50%.</p>
+
+
+<figure>
+    
+        <img src="/img/pr2accr.jpg" />
+    
+    
+    <figcaption>
+        <h4>3 layer NN accuracy</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+
+<figure>
+    
+        <img src="/img/pr2loss.jpg" />
+    
+    
+    <figcaption>
+        <h4>3 layer NN loss</h4>
+        
+    </figcaption>
+    
+</figure>
+
+
+<h3 id="cnn">CNN</h3>
+
+<p>A simple 2 layers CNN.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Tables</th>
+<th align="center">Are</th>
+<th align="right">Cool</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">col 3 is</td>
+<td align="center">right-aligned</td>
+<td align="right">$1600</td>
+</tr>
+
+<tr>
+<td align="left">col 2 is</td>
+<td align="center">centered</td>
+<td align="right">$12</td>
+</tr>
+
+<tr>
+<td align="left">zebra stripes</td>
+<td align="center">are neat</td>
+<td align="right">$1</td>
+</tr>
+</tbody>
+</table>
 </div>
 
     
@@ -487,6 +593,8 @@
     
 
     
+    
+    <script id="dsq-count-scr" src="//haoweix.disqus.com/count.js" async></script>
     
 
     
