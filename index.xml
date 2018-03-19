@@ -135,29 +135,53 @@
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th align=&#34;left&#34;&gt;Tables&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;Are&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;Cool&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Methods&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Test Accuracy&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Training time&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;col 3 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;right-aligned&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1600&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Subspace Learning&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;col 2 is&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;centered&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$12&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;PCA&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;99.70%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
-&lt;td align=&#34;left&#34;&gt;zebra stripes&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;are neat&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;$1&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;Logistic regression&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;SVM&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;96.57%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;2 layer NN&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;95.00%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;3 layer NN&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;95.50%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;CNN&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
