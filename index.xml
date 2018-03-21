@@ -11,19 +11,7 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Comparison of some simple classifiers for MNIST dataset</title>
-      <link>https://haoweix.github.io/petprojects/mnist-classifier/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://haoweix.github.io/petprojects/mnist-classifier/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;The Goal of this post&lt;/strong&gt;: is to summarize some interesting supervised machine learning approach using MNIST Data.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Comparison of some simple classifiers for MNIST dataset</title>
+      <title>Classifier Comparison for MNIST dataset</title>
       <link>https://haoweix.github.io/publication/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
@@ -32,9 +20,9 @@
 
 &lt;p&gt;&lt;strong&gt;The Goal of this post&lt;/strong&gt;: is to summarize some interesting supervised machine learning approach, which classfify MNIST hand-writen digit dataset.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Method&lt;/strong&gt;: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks will be introduced here.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Method&lt;/strong&gt;: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks, CNN are introduced here.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: It&amp;rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Results&lt;/strong&gt;: It&amp;rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data. Additionally, some simple methods yield amazing results.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Implementation&lt;/strong&gt;: Currently these methods are implemented respectively by Julia, MATLAB, and python. I will try to rewrite them all in python if I have time (probably in the summer).&lt;/p&gt;
 
@@ -68,6 +56,8 @@
 
 &lt;p&gt;​   Training accuracy is 100% after 500 epochs. Test error is 95.00%.&lt;/p&gt;
 
+&lt;!--
+
 
 &lt;figure&gt;
     
@@ -96,9 +86,13 @@
 &lt;/figure&gt;
 
 
+--&gt;
+
 &lt;p&gt;&lt;strong&gt;3 layers NN&lt;/strong&gt;: There 50 neurons in first hidden layer and 30 neurons in the second hidden layer.&lt;/p&gt;
 
 &lt;p&gt;​   Training accuracy after 100 epoch is 100%, test accuracy is 95.50%.&lt;/p&gt;
+
+&lt;!--
 
 
 &lt;figure&gt;
@@ -127,6 +121,8 @@
     
 &lt;/figure&gt;
 
+
+--&gt;
 
 &lt;h3 id=&#34;cnn&#34;&gt;CNN&lt;/h3&gt;
 
@@ -185,6 +181,18 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Comparison of some simple classifiers for MNIST dataset</title>
+      <link>https://haoweix.github.io/petprojects/mnist-classifier/</link>
+      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://haoweix.github.io/petprojects/mnist-classifier/</guid>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The Goal of this post&lt;/strong&gt;: is to summarize some interesting supervised machine learning approach using MNIST Data.&lt;/p&gt;
 </description>
     </item>
     

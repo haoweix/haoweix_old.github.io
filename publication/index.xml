@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Comparison of some simple classifiers for MNIST dataset</title>
+      <title>Classifier Comparison for MNIST dataset</title>
       <link>https://haoweix.github.io/publication/mnist-classifier/</link>
       <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://haoweix.github.io/publication/mnist-classifier/</guid>
       <description>The Goal of this post: is to summarize some interesting supervised machine learning approach, which classfify MNIST hand-writen digit dataset.
-Method: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks will be introduced here.
+Method: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks, CNN are introduced here.
 Results: It&amp;rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data.</description>
     </item>
     
