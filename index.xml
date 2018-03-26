@@ -28,7 +28,9 @@
 
 &lt;h3 id=&#34;subspace-learning&#34;&gt;Subspace Learning&lt;/h3&gt;
 
-&lt;p&gt;Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a d*n matrix, where $d=28 * 28$ and n is the number of training sample.&lt;/p&gt;
+&lt;p&gt;Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a $d*n$ matrix, where $d=28 * 28$ and n is the number of training sample. Doing a single SVD for (6000, 784) matrix will cost ~1s in my macbook. (But actually we only need k left singular vectors, so there may exist a fast algorithm, such as power method?) Using 60000 training images, the final overall accuracy is 94.67%, which is beyond my expectation because this is the simplest method used here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Explanation&lt;/strong&gt;: Note that the training error is 95.20%, which means the overfitting is not significant. That&amp;rsquo;s because we have dropped the singular vectors corresponding to small singular values, which made our algorithm less sensitive to noise, thus reducing overfitting.&lt;/p&gt;
 
 &lt;h3 id=&#34;pca-eigenface&#34;&gt;PCA(eigenface)&lt;/h3&gt;
 
@@ -133,6 +135,7 @@
 &lt;tr&gt;
 &lt;th align=&#34;center&#34;&gt;Methods&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Test Accuracy&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;(Training,test)&lt;/th&gt;
 &lt;th align=&#34;center&#34;&gt;Training time&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
@@ -140,18 +143,21 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;Subspace Learning&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;94.67%(k=15)&lt;br /&gt;92.14%(k=5)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;(60000,10000)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;~20s&lt;br /&gt;(6000,784)SVD&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;PCA&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;99.70%&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;Logistic regression&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
@@ -160,11 +166,13 @@
 &lt;td align=&#34;center&#34;&gt;SVM&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;96.57%&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;2 layer NN&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;95.00%&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
@@ -172,10 +180,12 @@
 &lt;td align=&#34;center&#34;&gt;3 layer NN&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;95.50%&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;CNN&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;95.00%&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;&lt;/td&gt;
 &lt;/tr&gt;

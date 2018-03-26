@@ -100,7 +100,7 @@
   <meta property="article:modified_time" content="2018-03-15T00:00:00&#43;00:00">
   
 
-  <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=xHH8E0wcEOGhdoScGlD4WoIU5qbhGfmgtjY0X7Zc0ho&cl=ffffff&w=a"></script>
+  
 
   <title>Classifier Comparison for MNIST dataset | Haowei Xiang</title>
 
@@ -365,10 +365,6 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
-  PDF
-</a>
-
 
 
 
@@ -413,7 +409,9 @@
 
 <h3 id="subspace-learning">Subspace Learning</h3>
 
-<p>Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a d*n matrix, where $d=28 * 28$ and n is the number of training sample.</p>
+<p>Subspace learning is one simple direct application of singular value decomposition(SVD), which is easy to understand and implement. Such an big disadvantage of this method is that it is especially time-consuming since we need to compute the SVD of a $d*n$ matrix, where $d=28 * 28$ and n is the number of training sample. Doing a single SVD for (6000, 784) matrix will cost ~1s in my macbook. (But actually we only need k left singular vectors, so there may exist a fast algorithm, such as power method?) Using 60000 training images, the final overall accuracy is 94.67%, which is beyond my expectation because this is the simplest method used here.</p>
+
+<p><strong>Explanation</strong>: Note that the training error is 95.20%, which means the overfitting is not significant. That&rsquo;s because we have dropped the singular vectors corresponding to small singular values, which made our algorithm less sensitive to noise, thus reducing overfitting.</p>
 
 <h3 id="pca-eigenface">PCA(eigenface)</h3>
 
@@ -518,6 +516,7 @@
 <tr>
 <th align="center">Methods</th>
 <th align="center">Test Accuracy</th>
+<th align="center">(Training,test)</th>
 <th align="center">Training time</th>
 </tr>
 </thead>
@@ -525,18 +524,21 @@
 <tbody>
 <tr>
 <td align="center">Subspace Learning</td>
-<td align="center"></td>
-<td align="center"></td>
+<td align="center">94.67%(k=15)<br />92.14%(k=5)</td>
+<td align="center">(60000,10000)</td>
+<td align="center">~20s<br />(6000,784)SVD</td>
 </tr>
 
 <tr>
 <td align="center">PCA</td>
 <td align="center">99.70%</td>
 <td align="center"></td>
+<td align="center"></td>
 </tr>
 
 <tr>
 <td align="center">Logistic regression</td>
+<td align="center"></td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
@@ -545,11 +547,13 @@
 <td align="center">SVM</td>
 <td align="center">96.57%</td>
 <td align="center"></td>
+<td align="center"></td>
 </tr>
 
 <tr>
 <td align="center">2 layer NN</td>
 <td align="center">95.00%</td>
+<td align="center"></td>
 <td align="center"></td>
 </tr>
 
@@ -557,10 +561,12 @@
 <td align="center">3 layer NN</td>
 <td align="center">95.50%</td>
 <td align="center"></td>
+<td align="center"></td>
 </tr>
 
 <tr>
 <td align="center">CNN</td>
+<td align="center">95.00%</td>
 <td align="center"></td>
 <td align="center"></td>
 </tr>
