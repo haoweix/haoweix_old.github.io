@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://haoweix.github.io/project/visual-servoing-copy/</loc>
+      <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://haoweix.github.io/publication/mnist-classifier/</loc>
       <lastmod>2018-03-15T00:00:00+00:00</lastmod>
     </url>
@@ -177,6 +186,16 @@
     
     <url>
     
+      <loc>https://haoweix.github.io/tags/covnets/</loc>
+      <lastmod>2018-04-30T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://haoweix.github.io/tags/deep-learning/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -208,7 +227,7 @@
     <url>
     
       <loc>https://haoweix.github.io/project/</loc>
-      <lastmod>2018-03-15T00:00:00+00:00</lastmod>
+      <lastmod>2018-04-30T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
