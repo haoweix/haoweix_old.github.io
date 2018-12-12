@@ -20,8 +20,7 @@
       <guid>https://haoweix.github.io/project/visual-servoing-copy/</guid>
       <description>Group Work Author: Tian Pang, Zeyu Sun, Haowei Xiang
 Basically, we implement a Deep Convolutional Generative Adverisial Network(DCGAN) to generate fake images (e.g., sunflower and cars in our case). The roughly tuned CNN did well in the sunflower case while did quite poor in the cars case. And we investigate how to use different kind of Style Transfer in terms of their cost function.
-Style Transfer ####Theory
-Style Transfer is a transformation of image that transfer the artistic style of content image to style image.</description>
+Style Transfer Theory Style Transfer is a transformation of image that transfer the artistic style of content image to style image.</description>
     </item>
     
     <item>

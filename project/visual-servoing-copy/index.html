@@ -19,8 +19,7 @@
   
   <meta name="description" content="Group Work Author: Tian Pang, Zeyu Sun, Haowei Xiang
 Basically, we implement a Deep Convolutional Generative Adverisial Network(DCGAN) to generate fake images (e.g., sunflower and cars in our case). The roughly tuned CNN did well in the sunflower case while did quite poor in the cars case. And we investigate how to use different kind of Style Transfer in terms of their cost function.
-Style Transfer ####Theory
-Style Transfer is a transformation of image that transfer the artistic style of content image to style image.">
+Style Transfer Theory Style Transfer is a transformation of image that transfer the artistic style of content image to style image.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://haoweix.github.io/project/visual-servoing-copy/">
@@ -97,8 +96,7 @@ Style Transfer is a transformation of image that transfer the artistic style of 
   <meta property="og:title" content="DC-GAN and Style Transfer | Haowei Xiang">
   <meta property="og:description" content="Group Work Author: Tian Pang, Zeyu Sun, Haowei Xiang
 Basically, we implement a Deep Convolutional Generative Adverisial Network(DCGAN) to generate fake images (e.g., sunflower and cars in our case). The roughly tuned CNN did well in the sunflower case while did quite poor in the cars case. And we investigate how to use different kind of Style Transfer in terms of their cost function.
-Style Transfer ####Theory
-Style Transfer is a transformation of image that transfer the artistic style of content image to style image."><meta property="og:image" content="https://haoweix.github.io/img/sunflower_model1.jpg">
+Style Transfer Theory Style Transfer is a transformation of image that transfer the artistic style of content image to style image."><meta property="og:image" content="https://haoweix.github.io/img/sunflower_model1.jpg">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-04-30T00:00:00&#43;00:00">
@@ -334,7 +332,7 @@ Style Transfer is a transformation of image that transfer the artistic style of 
 
 <h3 id="style-transfer">Style Transfer</h3>
 
-<p>####Theory</p>
+<h4 id="theory">Theory</h4>
 
 <p>Style Transfer is a transformation of image that transfer the artistic style of content image to style image. A famous style image is starry night painted by Vincent van Gogh.</p>
 
@@ -350,6 +348,17 @@ Add the style loss for all layers:$L<em>s = \sum</em>{\ell \in \mathcal{L}} L_s^
 $L</em>{tv} = w<em>t \times \sum</em>{c=1}^3\sum<em>{i=1}^{H-1} \sum</em>{j=1}^{W-1} \left( (x<em>{i,j+1, c} - x</em>{i,j,c})^2 + (x<em>{i+1, j,c} - x</em>{i,j,c})^2  \right)$.</p>
 
 <h4 id="results">Results</h4>
+
+<p><img src="tower_set.jpg" alt="Tower Set" /></p>
+
+<h3 id="dc-gan">DC-GAN</h3>
+
+<h4 id="theory-1">Theory</h4>
+
+<p>As mentioned, DCGAN is consist of a generator and a discriminator. The discriminator, which takes an image as input and gives the probability that the input image is a true image, is a convolutional neural network. It convolves 64 * 64 *3 images several times with certain window sizes, strides and depth and give the probability with sigmoid as the output activation function.<br />
+On the contrary, the generator, which takes random noise as input and generate fake images as output, is a transpose convolutional neural network. It takes 100 random numbers with normal distribution, fully connect them to 4 * 4 * 1024 neurons, reshapes the neurons to 4 * 4 images with 1024 depth, deconvolves them several times and finally generate 64 * 64 * 3 images.</p>
+
+<h4 id="results-1">Results</h4>
 
 <h2 id="individual-follow-up-work">Individual Follow up Work</h2>
 
