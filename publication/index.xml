@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Haowei Xiang</title>
+    <title>Publications | Haowei Xiang</title>
     <link>https://haoweix.github.io/publication/</link>
-    <description>Recent content in Publications on Haowei Xiang</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://haoweix.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://haoweix.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://haoweix.github.io/img/icon-192.png</url>
+      <title>Publications</title>
+      <link>https://haoweix.github.io/publication/</link>
+    </image>
     
     <item>
-      <title>Classifier Comparison for MNIST dataset</title>
-      <link>https://haoweix.github.io/publication/mnist-classifier/</link>
-      <pubDate>Thu, 15 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://haoweix.github.io/publication/mnist-classifier/</guid>
-      <description>The Goal of this post: is to summarize some interesting supervised machine learning approach, which classfify MNIST hand-writen digit dataset.
-Method: According to the timeline that I have been exposed, subspace learning, logistic regressions, PCA or so called eigenface, SVM and Neuron Networks, CNN are introduced here.
-Results: It&amp;rsquo;s natural to expect that complicated model will have lower test error. Here we will see the accuracy is not proportional to the time of training data.</description>
+      <title>SPECT/CT scatter estimation using a deep convolutional neural network: implementation in Y-90 imaging</title>
+      <link>https://haoweix.github.io/publication/conference-paper/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://haoweix.github.io/publication/conference-paper/</guid>
+      <description></description>
     </item>
     
   </channel>

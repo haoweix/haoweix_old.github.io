@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hongki Lim | Haowei Xiang</title>
+    <link>https://haoweix.github.io/authors/hongki-lim/</link>
+      <atom:link href="https://haoweix.github.io/authors/hongki-lim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hongki Lim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://haoweix.github.io/img/icon-192.png</url>
+      <title>Hongki Lim</title>
+      <link>https://haoweix.github.io/authors/hongki-lim/</link>
+    </image>
+    
+    <item>
+      <title>SPECT/CT scatter estimation using a deep convolutional neural network: implementation in Y-90 imaging</title>
+      <link>https://haoweix.github.io/publication/conference-paper/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://haoweix.github.io/publication/conference-paper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
